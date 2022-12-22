@@ -8,7 +8,6 @@ using UnityEngine;
 
 public class Music_Spead : MonoBehaviour
 {
-    int x=0;
 
     // Start is called before the first frame update
     void Start()
@@ -22,32 +21,28 @@ public class Music_Spead : MonoBehaviour
     {
 
 
-        if (Input.GetKeyDown(KeyCode.UpArrow)&&x<10)
+        if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             //çƒê∂ë¨ìxÇÇ†Ç∞ÇÈ
             audioSource.pitch = Mathf.Min(audioSource.pitch + 0.1f, 3);
-            x++;
         }
 
-        else if (Input.GetKeyDown(KeyCode.DownArrow)&&(x>0))
+        else if (Input.GetKeyDown(KeyCode.DownArrow))
         {
             //çƒê∂ë¨ìxÇâ∫Ç∞ÇÈ
-            audioSource.pitch = Mathf.Max(audioSource.pitch - 0.1f, 0.5f);
-            x--;
+            audioSource.pitch = Mathf.Max(audioSource.pitch - 0.1f, 1);
         }
 
         else if (Input.GetKeyDown(KeyCode.R))
         {
             //çƒê∂ë¨ìxÇìñî{Ç…Ç∑ÇÈ
             audioSource.pitch = 1;
-            x=0;
         }
         
         else if (Input.GetKeyDown(KeyCode.Q))
         {
             //ãtçƒê∂
             audioSource.pitch = -1;
-            x=0;
         }
 
 
