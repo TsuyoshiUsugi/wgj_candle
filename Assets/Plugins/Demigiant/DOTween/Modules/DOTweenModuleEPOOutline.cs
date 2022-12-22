@@ -82,12 +82,9 @@ namespace DG.Tweening
             return DOTween.Kill(target, complete);
         }
 
-<<<<<<< HEAD
         /// <summary>
         /// Controls the alpha (transparency) of the outline
         /// </summary>
-=======
->>>>>>> 3677e8a7034dcf614a3debafa3f91063e1fb6beb
         public static TweenerCore<Color, Color, ColorOptions> DOFade(this Outlinable.OutlineProperties target, float endValue, float duration)
         {
             var tweener = DOTween.ToAlpha(() => target.Color, x => target.Color = x, endValue, duration);
@@ -95,12 +92,9 @@ namespace DG.Tweening
             return tweener;
         }
 
-<<<<<<< HEAD
         /// <summary>
         /// Controls the color of the outline
         /// </summary>
-=======
->>>>>>> 3677e8a7034dcf614a3debafa3f91063e1fb6beb
         public static TweenerCore<Color, Color, ColorOptions> DOColor(this Outlinable.OutlineProperties target, Color endValue, float duration)
         {
             var tweener = DOTween.To(() => target.Color, x => target.Color = x, endValue, duration);
@@ -108,19 +102,9 @@ namespace DG.Tweening
             return tweener;
         }
 
-<<<<<<< HEAD
         /// <summary>
         /// Controls the amount of blur applied to the outline
         /// </summary>
-=======
-        public static TweenerCore<float, float, FloatOptions> DODilateShift(this Outlinable.OutlineProperties target, float endValue, float duration, bool snapping = false)
-        {
-            var tweener = DOTween.To(() => target.DilateShift, x => target.DilateShift = x, endValue, duration);
-            tweener.SetOptions(snapping).SetTarget(target);
-            return tweener;
-        }
-
->>>>>>> 3677e8a7034dcf614a3debafa3f91063e1fb6beb
         public static TweenerCore<float, float, FloatOptions> DOBlurShift(this Outlinable.OutlineProperties target, float endValue, float duration, bool snapping = false)
         {
             var tweener = DOTween.To(() => target.BlurShift, x => target.BlurShift = x, endValue, duration);
@@ -128,12 +112,9 @@ namespace DG.Tweening
             return tweener;
         }
 
-<<<<<<< HEAD
         /// <summary>
         /// Controls the amount of blur applied to the outline
         /// </summary>
-=======
->>>>>>> 3677e8a7034dcf614a3debafa3f91063e1fb6beb
         public static TweenerCore<float, float, FloatOptions> DOBlurShift(this Outliner target, float endValue, float duration, bool snapping = false)
         {
             var tweener = DOTween.To(() => target.BlurShift, x => target.BlurShift = x, endValue, duration);
@@ -141,39 +122,22 @@ namespace DG.Tweening
             return tweener;
         }
 
-<<<<<<< HEAD
         /// <summary>
         /// Controls the amount of dilation applied to the outline
         /// </summary>
         public static TweenerCore<float, float, FloatOptions> DODilateShift(this Outlinable.OutlineProperties target, float endValue, float duration, bool snapping = false)
-=======
-        public static TweenerCore<float, float, FloatOptions> DODilateShift(this Outliner target, float endValue, float duration, bool snapping = false)
->>>>>>> 3677e8a7034dcf614a3debafa3f91063e1fb6beb
         {
             var tweener = DOTween.To(() => target.DilateShift, x => target.DilateShift = x, endValue, duration);
             tweener.SetOptions(snapping).SetTarget(target);
             return tweener;
         }
 
-<<<<<<< HEAD
         /// <summary>
         /// Controls the amount of dilation applied to the outline
         /// </summary>
         public static TweenerCore<float, float, FloatOptions> DODilateShift(this Outliner target, float endValue, float duration, bool snapping = false)
         {
             var tweener = DOTween.To(() => target.DilateShift, x => target.DilateShift = x, endValue, duration);
-=======
-        public static TweenerCore<float, float, FloatOptions> DOInfoRendererScale(this Outliner target, float endValue, float duration, bool snapping = false)
-        {
-            var tweener = DOTween.To(() => target.InfoRendererScale, x => target.InfoRendererScale = x, endValue, duration);
-            tweener.SetOptions(snapping).SetTarget(target);
-            return tweener;
-        }
-
-        public static TweenerCore<float, float, FloatOptions> DOPrimaryRendererScale(this Outliner target, float endValue, float duration, bool snapping = false)
-        {
-            var tweener = DOTween.To(() => target.PrimaryRendererScale, x => target.PrimaryRendererScale = x, endValue, duration);
->>>>>>> 3677e8a7034dcf614a3debafa3f91063e1fb6beb
             tweener.SetOptions(snapping).SetTarget(target);
             return tweener;
         }
