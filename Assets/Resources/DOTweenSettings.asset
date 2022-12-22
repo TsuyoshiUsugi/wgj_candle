@@ -17,7 +17,10 @@ MonoBehaviour:
     logBehaviour: 2
     nestedTweenFailureBehaviour: 0
   timeScale: 1
+<<<<<<< HEAD
   unscaledTimeScale: 1
+=======
+>>>>>>> 3677e8a7034dcf614a3debafa3f91063e1fb6beb
   useSmoothDeltaTime: 0
   maxSmoothUnscaledTime: 0.15
   rewindCallbackMode: 0
@@ -33,7 +36,11 @@ MonoBehaviour:
   defaultEasePeriod: 0
   defaultAutoKill: 1
   defaultLoopType: 0
+<<<<<<< HEAD
   debugMode: 0
+=======
+  debugMode: 1
+>>>>>>> 3677e8a7034dcf614a3debafa3f91063e1fb6beb
   debugStoreTargetId: 1
   showPreviewPanel: 1
   storeSettingsLocation: 0
