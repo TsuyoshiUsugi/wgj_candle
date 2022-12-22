@@ -40,6 +40,7 @@ public class GameSceneManager : MonoBehaviour
     bool _endGame;
     [SerializeField] GameObject _endText;
     [SerializeField] string _resultScene;
+    [SerializeField] AudioClip _endSe;
 
     public enum State
     {
@@ -156,6 +157,7 @@ public class GameSceneManager : MonoBehaviour
     private void EndGame()
     {
         _state = State.end;
+        _audioSource.PlayOneShot(_endSe);
         _endText.SetActive(true);
         _timeText.text = $"Time:0";
         StartCoroutine(nameof(MoveResultScene));

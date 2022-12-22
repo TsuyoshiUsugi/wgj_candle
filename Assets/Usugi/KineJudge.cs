@@ -6,6 +6,7 @@ public class KineJudge : MonoBehaviour
 {
     [SerializeField] GameObject _moti;
     [SerializeField] GameObject _cautionText;
+    [SerializeField] GameObject _okText;
 
     [SerializeField] GameSceneManager _gmManager;
 
@@ -40,6 +41,8 @@ public class KineJudge : MonoBehaviour
             _okTime++;
             _gmManager._state = GameSceneManager.State.koneru;
             _audioSource.PlayOneShot(_tatakuSe);
+            StartCoroutine(nameof(ShowOk));
+
         }
         else
         {
@@ -57,5 +60,12 @@ public class KineJudge : MonoBehaviour
         _cautionText.SetActive(true);
         yield return new WaitForSeconds(1);
         _cautionText.SetActive(false);
+    }
+    
+    IEnumerator ShowOk()
+    {
+        _okText.SetActive(true);
+        yield return new WaitForSeconds(1);
+        _okText.SetActive(false);
     }
 }
