@@ -6,12 +6,20 @@ using UnityEngine;
 
 public class SceneManagerControl : MonoBehaviour
 {
-    [SerializeField] string ScneName1 = "Scene1";
-    [SerializeField] string ScneName2 = "Scene02"; // Scene‚Ì–¼‘O
-    [SerializeField] string ScneName3 = "Scene03";
+    [SerializeField] string ScneName1 = "Asobikata";
+    [SerializeField] string ScneName2 = "Title";//scene‚Ì–¼‘O
+    [SerializeField] string ScneName3 = "Usugi";
     public void SceneLoad1()
     {
         SceneManager.LoadScene(ScneName1);
+    }
+    public void SceneLoad2()
+    {
+        SceneManager.LoadScene(ScneName2);
+    }
+    public void SceneLoad3()
+    {
+        SceneManager.LoadScene(ScneName3);
     }
     public void SceneGame()
     {
