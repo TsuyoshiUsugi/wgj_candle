@@ -24,7 +24,7 @@ public class Music_Spead : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.UpArrow)&&x<10)
         {
-            //
+            //Ä¶‘¬“x‚ð‚ ‚°‚é
             audioSource.pitch = Mathf.Min(audioSource.pitch + 0.1f, 3);
             x++;
         }
