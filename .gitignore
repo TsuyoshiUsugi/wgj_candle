@@ -59,3 +59,7 @@ sysinfo.txt
 crashlytics-build.properties
 
 ProjectSettings/boot.config
+Assets/Plugins/Demigiant/DOTween/Editor/DOTweenUpgradeManager.dll
+Assets/Plugins/Demigiant/DOTween/Editor/DOTweenUpgradeManager.dll.meta
+Assets/Plugins/Demigiant/DOTween/Editor/DOTweenUpgradeManager.XML
+Assets/Plugins/Demigiant/DOTween/Editor/DOTweenUpgradeManager.XML.meta
