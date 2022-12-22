@@ -70,6 +70,8 @@ public class GameSceneManager : MonoBehaviour
         _kineJudge._isOk = false;
 
         _constantLimitTime = _limitTime;
+
+        _score = 0;
     }
 
     void Start()
@@ -143,7 +145,9 @@ public class GameSceneManager : MonoBehaviour
             _koneru._phaseNum = 2;
         }
 
+
         _timeText.text = $"Time:{ _limitTime.ToString("F1")}";
+        if (_limitTime < 0) _timeText.text = "Time:0";
 
         if(_limitTime < 0 && !_endGame)
         {
@@ -156,6 +160,7 @@ public class GameSceneManager : MonoBehaviour
     /// </summary>
     private void EndGame()
     {
+        _endGame = true;
         _state = State.end;
         _audioSource.PlayOneShot(_endSe);
         _endText.SetActive(true);

@@ -21,6 +21,7 @@ public class Koneru : MonoBehaviour
     [SerializeField] AudioClip _koneruse;
     [SerializeField] AudioClip _konemisu;
     [SerializeField] GameObject _cautionText;
+    [SerializeField] LeftHand _leftHand;
 
     [SerializeField] public bool _waitForKine;
     [SerializeField] public int _phaseNum;
@@ -108,6 +109,7 @@ public class Koneru : MonoBehaviour
                 //Ø‚èo‚·•¶š‚ª–³‚­‚È‚Á‚½‚ç
                 if (order.Length == 0)
                 {
+                    _leftHand._do = true;
                     switch (_phaseNum)
                     {
                         case 0:

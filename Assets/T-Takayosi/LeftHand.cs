@@ -13,6 +13,7 @@ public class LeftHand : MonoBehaviour
 
     bool x=false;
     float y = 0;
+    public bool _do;
 
     void Start()
     {
@@ -24,8 +25,9 @@ public class LeftHand : MonoBehaviour
     void Update()
     {
         //何かしらのトリガーが起動した場合この処理を行う
-        if (Input.GetKey(KeyCode.A))
+        if (_do)
         {
+            _do = false;
             x = true;
         }
 
@@ -39,8 +41,8 @@ public class LeftHand : MonoBehaviour
                 y = 0;
             }
             float r = Mathf.Sin(y);
-            _Image.x = _Image_Base.x + (r * 2);  //初期値から移動
-            _Image.y = _Image_Base.y + (r * -1);  //初期値から移動
+            _Image.x = _Image_Base.x + (r * .6f);  //初期値から移動
+            _Image.y = _Image_Base.y + (r * -.3f);  //初期値から移動
 
             gameObject.transform.position = _Image; //映像に反映
 

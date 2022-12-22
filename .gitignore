@@ -63,3 +63,6 @@ Assets/Plugins/Demigiant/DOTween/Editor/DOTweenUpgradeManager.dll
 Assets/Plugins/Demigiant/DOTween/Editor/DOTweenUpgradeManager.dll.meta
 Assets/Plugins/Demigiant/DOTween/Editor/DOTweenUpgradeManager.XML
 Assets/Plugins/Demigiant/DOTween/Editor/DOTweenUpgradeManager.XML.meta
+ProjectSettings/BurstAotSettings_StandaloneWindows.json
+ProjectSettings/CommonBurstAotSettings.json
+wgj_Candle_BurstDebugInformation_DoNotShip/Data/Plugins/x86_64/lib_burst_generated.txt

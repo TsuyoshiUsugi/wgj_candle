@@ -2505,7 +2505,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScneName1: Usugi
-  ScneName2: Asobikata
+  ScneName2: Title
   ScneName3: Title
 --- !u!1001 &639449928086058590
 PrefabInstance:
