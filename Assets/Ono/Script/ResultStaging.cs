@@ -90,17 +90,17 @@ public class ResultStaging : MonoBehaviour
             Moti9.transform.DOMove(new Vector2(1688f, 903f), 1f).SetDelay(7.1f);
             Moti9.enabled = true;
         }
-        if ((score >= 0) && (score <= 50))
-        {
-            OnewordText.text = string.Format("‚¨”æ‚êƒTƒ}ƒ“ƒT[!!");
-        }
-        if ((score >= 51) && (score <= 100))
+        if ((score >= 0) && (score <= 200))
         {
             OnewordText.text = string.Format("ŽG‹›‰³!!");
         }
-        if ((score >= 101) && (score <= 200))
+        if ((score >= 200) && (score <= 300))
         {
-            OnewordText.text = string.Format("‚à‚¿‚¿!!");
+            OnewordText.text = string.Format("‚±‚ñ‚ÈƒQ[ƒ€‚É‚Þ‚«‚É‚È‚Á‚Ä‚é‚ñ‚¶‚á‚È‚¢‚æOO!!");
+        }
+        if ((score >= 300) && (score <= 5000))
+        {
+            OnewordText.text = string.Format("‚à‚¿‚¿ã‹‰!!");
         }
     }
 }
